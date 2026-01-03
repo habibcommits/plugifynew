@@ -1,0 +1,117 @@
+.header {
+    border-bottom: 1px solid var(--sh-border);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 13px;
+    color: var(--sh-text-light);
+    border-bottom: 1px solid var(--sh-border);
+}
+
+.topLinks,
+.topSettings {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.socialIcons {
+    margin-left: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--sh-text-dark);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.logoIcon {
+    color: var(--sh-orange);
+}
+
+.searchContainer {
+    flex: 0.6;
+    display: flex;
+    position: relative;
+    max-width: 600px;
+}
+
+.searchContainer input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    outline: none;
+    font-family: inherit;
+}
+
+.searchContainer button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: var(--sh-orange);
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navIcons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: 500;
+    color: var(--sh-text-dark);
+}
+
+.authLinks,
+.cartLink {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.adminBadge {
+    background: var(--sh-text-dark);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .searchContainer {
+        display: none;
+    }
+
+    .topBar {
+        display: none;
+    }
+}

@@ -1,0 +1,26 @@
+.statsBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0;
+    text-align: center;
+    border-top: 1px solid var(--sh-border);
+    padding-top: 40px;
+}
+
+.statItem h2 {
+    font-size: 24px;
+    margin: 10px 0 5px;
+    color: var(--sh-text-dark);
+}
+
+.statItem p {
+    color: var(--sh-text-light);
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .statsBar {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

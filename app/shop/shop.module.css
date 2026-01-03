@@ -1,0 +1,112 @@
+.main {
+    min-height: 100vh;
+    padding-top: 80px;
+    /* Space for fixed navbar */
+}
+
+.header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 4rem 0;
+    text-align: center;
+    border-bottom: 1px solid var(--sh-border);
+    margin-bottom: 3rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--sh-text-dark);
+}
+
+.subtitle {
+    color: var(--sh-text-light);
+    font-size: 1.2rem;
+}
+
+/* ... */
+
+.filterGroup h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--sh-border);
+    color: var(--sh-text-dark);
+}
+
+/* ... */
+
+.filterItem:hover {
+    background: #f1f1f1;
+    color: var(--sh-text-dark);
+}
+
+.filterItem.active {
+    background: var(--sh-orange);
+    color: white;
+}
+
+/* ... */
+
+.empty {
+    text-align: center;
+    padding: 4rem;
+    background: #f9f9f9;
+    border-radius: var(--radius);
+    border: 1px solid var(--sh-border);
+    grid-column: 1/-1;
+}
+
+.empty p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--sh-text-light);
+}
+
+.resetBtn {
+    display: inline-block;
+    background: var(--sh-orange);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+}
+
+.pagination {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.pageBtn {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.pageBtn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.pageInfo {
+    color: #888;
+}
+
+@media (max-width: 900px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+        margin-bottom: 2rem;
+    }
+
+    .filterList {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

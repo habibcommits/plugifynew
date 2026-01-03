@@ -1,0 +1,17 @@
+.brandFlex {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.brandItem {
+    padding: 20px;
+    border: 1px solid var(--sh-border);
+    border-radius: 10px;
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+    color: var(--sh-text-light);
+    font-weight: 600;
+}

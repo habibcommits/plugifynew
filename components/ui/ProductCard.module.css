@@ -1,0 +1,102 @@
+.card {
+    background: white;
+    border: 1px solid var(--sh-border);
+    border-radius: 15px;
+    padding: 15px;
+    position: relative;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #f1f1f1;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--sh-text-dark);
+    z-index: 2;
+}
+
+.imageLink {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.image {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.title {
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #444;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 10px;
+}
+
+.starFilled {
+    color: #FFB300;
+    font-size: 12px;
+    fill: #FFB300;
+}
+
+.starEmpty {
+    color: #ddd;
+    font-size: 12px;
+}
+
+.reviewCount {
+    color: #777;
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+    color: var(--sh-text-dark);
+}
+
+.addToCartBtn {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--sh-text-dark);
+    transition: all 0.2s;
+}
+
+.addToCartBtn:hover {
+    background: var(--sh-orange);
+    color: white;
+    border-color: var(--sh-orange);
+}
